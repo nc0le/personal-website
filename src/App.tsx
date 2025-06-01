@@ -16,12 +16,12 @@ function App() {
             height: '200px', 
             objectFit: 'cover', 
             borderRadius: '50%',
-            objectPosition: '50% 20%'
+            objectPosition: '50% 20%',
           }}
         />
       </div>
 
-      <h1 style={{ fontFamily: 'Azeret Mono, monospace', fontSize: 40 , fontWeight: 'normal'}}>Nicole Cui</h1>
+      <h1 style={{ fontFamily: 'Azeret Mono, monospace', fontSize: 40 , fontWeight: 'normal', color: '#000000'}}>Nicole Cui</h1>
       <div className="card">
         <p>
         Hello! I am an undergraduate at Columbia University studying computer science & applied math.
