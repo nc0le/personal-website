@@ -1,7 +1,7 @@
-
 import './App.css'
 import profilePic from './assets/websitephoto.jpg'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { Analytics } from "@vercel/analytics/next";
 
 function App() {
 
@@ -57,9 +57,11 @@ function App() {
         >
           <FaLinkedin />
         </a>
+        <Analytics />
       </div>
     </>
   )
 }
 
 export default App
+
