@@ -8,17 +8,23 @@ export default function TerminalEmulator() {
   const term = useRef<Terminal | null>(null)
 
   const [cwd, setCwd] = useState('~')
-  const [name, setName] = useState('you')
   let input = ''
 
   const fileSystem = {
     '~': {
-      'about.txt': 
-      'Hello! I am Nicole!',
-      projects: {
-        'duckweed.txt': 'Machine learning for duckweed callus detection',
-        'krAI-overlay': 'AI-powered overlay for realtime digital art feedback',
-      },
+        'about.txt': `
+        +----------------------------------------------+                                | These folders contain an overview of my work |                                | Code: https://github.com/nc0le               |                                +----------------------------------------------+
+        `,
+
+        projects: {
+            'krAI-overlay': 'AI-powered overlay for realtime digital art feedback',
+            'duckweed.txt': 'Machine learning for duckweed callus classification',
+            'GetYoMoneyUp': 'A chrome extension for smarter online shopping',
+        },
+        research:{
+            'knowles-lab.txt': 'Detection and prediction of exitrons',
+            'esvelt-lab.txt': 'Research on synthetic biology and CRISPR',
+        }
     },
   }
 
@@ -63,7 +69,7 @@ export default function TerminalEmulator() {
   }, [])
 
   function prompt() {
-    term.current?.write(`\x1b[38;2;238;188;224m${name}@desktop \x1b[38;2;136;179;249m${cwd} \x1b[0m$ `)
+    term.current?.write(`\x1b[38;2;238;188;224myou@nicoles-website \x1b[38;2;136;179;249m${cwd} \x1b[0m$ `)
   }
 
   function getCurrentDir(): any {
@@ -135,14 +141,17 @@ export default function TerminalEmulator() {
         term.current!.writeln(cwd)
         break
 
-      case 'name':
-        if (!arg) term.current!.writeln('Usage: name <new_name>')
-        else setName(arg)
-        break
-
       case 'help':
-        term.current!.writeln('Available commands: ls, cd, cat, pwd, name, clear, help')
-        break
+        term.current!.writeln('');
+        term.current!.writeln('\x1b[38;2;136;179;249mAvailable commands:\x1b[0m');
+        term.current!.writeln('  \x1b[38;2;136;179;249mls\x1b[0m                - List files and directories');
+        term.current!.writeln('  \x1b[38;2;136;179;249mcd <directory>\x1b[0m    - Change directory');
+        term.current!.writeln('  \x1b[38;2;136;179;249mcat <file>\x1b[0m        - Display file contents');
+        term.current!.writeln('  \x1b[38;2;136;179;249mpwd\x1b[0m               - Print working directory');
+        term.current!.writeln('  \x1b[38;2;136;179;249mclear\x1b[0m             - Clear the terminal');
+        term.current!.writeln('');
+        break;
+          
 
       default:
         term.current!.writeln(`Command not found: ${cmd}`)
