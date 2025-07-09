@@ -25,6 +25,8 @@ export default function TerminalEmulator() {
   useEffect(() => {
     term.current = new Terminal({
       cursorBlink: true,
+      lineHeight: 1.2, 
+
       theme: {
         background: '#171717',
         foreground: '#cfcfcf',
@@ -35,7 +37,6 @@ export default function TerminalEmulator() {
 
     const now = new Date().toDateString()
     term.current.writeln(`Last login: ${now}`)
-    term.current.writeln('\nType help for help\n')
     prompt()
 
     term.current.onData((data) => {

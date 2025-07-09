@@ -29,13 +29,18 @@ function App() {
         >
           Close Terminal
         </button>
+        <div className="card-terminal">
+          <p>
+          Welcome! Type 'help' for a list of commands
+          </p>
+        </div>
         <TerminalEmulator />
       </div>
     );
   }
 
   return (
-    <div style={{ padding: '4rem'}}>
+    <div>
       {/* Top-left terminal toggle button */}
       <button
         onClick={() => setShowTerminal(true)}

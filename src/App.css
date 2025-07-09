@@ -12,24 +12,32 @@
   font-size: 15px;
   color: #000000
 }
+.card-terminal{
+  font-family: 'Azeret Mono', monospace;
+  font-size: 15px;
+  color: #000000;
+  margin-top: -2em;
+  margin-bottom: -0.8em;
+
+}
 .terminal-wrapper {
   box-sizing: border-box;
   color:#171717;
 
   width: 100%;
-  max-width: 900px;
-  height: 60vh;
-  max-height: 500px;
+  max-width: 1000px;
+  height: 70vh;
+  max-height: 700px;
 
   /* Use clamp() to make padding dynamic: min 8px, ideal 5%, max 24px */
-  padding: clamp(8px, 5vw, 24px);
-  margin: clamp(8px, 5vh, 40px) auto;
+  padding: clamp(8px, 5vw, 20px);
+  margin: clamp(8px, 5vh, 30px) auto;
 
   background-color: #171717;
   border-radius: 15px;
+  text-align: left;
 
-  display: flex;
+  display: block;
   align-items: center;
-  justify-content: center;
   overflow: hidden;
 }
