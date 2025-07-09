@@ -4,21 +4,6 @@
   padding: 2rem;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-
 .card {
   margin-top: -3em;
   padding: 2em;
@@ -26,4 +11,21 @@
   font-family: 'Azeret Mono', monospace;
   font-size: 15px;
   color: #000000
+}
+.terminal-wrapper {
+  width: 90%;
+  max-width: 900px;
+  height: 60vh;
+  max-height: 500px;
+
+  margin: 40px auto; /* centers it horizontally + space from top/bottom */
+  padding: 20px;
+
+  background-color: #1e1e2e;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Terminal } from 'xterm'
 import 'xterm/css/xterm.css'
+import './App.css';
 
 export default function TerminalEmulator() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -13,7 +14,7 @@ export default function TerminalEmulator() {
   const fileSystem = {
     '~': {
       'about.txt': 
-        'Hello! I am Nicole!',
+      'Hello! I am Nicole!',
       projects: {
         'duckweed.txt': 'Machine learning for duckweed callus detection',
         'krAI-overlay': 'AI-powered overlay for realtime digital art feedback',
@@ -27,6 +28,7 @@ export default function TerminalEmulator() {
       theme: {
         background: '#1e1e2e',
         foreground: '#cdd6f4',
+    
       },
     })
     term.current.open(containerRef.current!)
@@ -146,5 +148,5 @@ export default function TerminalEmulator() {
     }
   }
 
-  return <div ref={containerRef} style={{ width: '100%', height: '400px', marginTop: '20px' }} />
+  return <div ref={containerRef} className="terminal-wrapper" />;
 }
