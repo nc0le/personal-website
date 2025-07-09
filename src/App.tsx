@@ -8,7 +8,7 @@ function App() {
   const [showTerminal, setShowTerminal] = useState(false);
   if (showTerminal) {
     return (
-      <div style={{ padding: '4rem'}}>
+      <div style={{ padding: '4rem', overflow: 'hidden' }}>
         <button
           onClick={() => setShowTerminal(false)}
           style={{

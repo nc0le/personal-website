@@ -13,16 +13,20 @@
   color: #000000
 }
 .terminal-wrapper {
-  width: 90%;
+  box-sizing: border-box;
+  color:#171717;
+
+  width: 100%;
   max-width: 900px;
   height: 60vh;
   max-height: 500px;
 
-  margin: 40px auto; /* centers it horizontally + space from top/bottom */
-  padding: 20px;
+  /* Use clamp() to make padding dynamic: min 8px, ideal 5%, max 24px */
+  padding: clamp(8px, 5vw, 24px);
+  margin: clamp(8px, 5vh, 40px) auto;
 
-  background-color: #1e1e2e;
-  border-radius: 12px;
+  background-color: #171717;
+  border-radius: 15px;
 
   display: flex;
   align-items: center;

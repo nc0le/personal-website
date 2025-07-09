@@ -26,8 +26,8 @@ export default function TerminalEmulator() {
     term.current = new Terminal({
       cursorBlink: true,
       theme: {
-        background: '#1e1e2e',
-        foreground: '#cdd6f4',
+        background: '#171717',
+        foreground: '#cfcfcf',
     
       },
     })
