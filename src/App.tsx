@@ -1,12 +1,63 @@
-
 import './App.css'
 import profilePic from './assets/websitephoto.jpg'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { useState } from 'react'
+import TerminalEmulator from './Terminal';
 
 function App() {
+  const [showTerminal, setShowTerminal] = useState(false);
+  if (showTerminal) {
+    return (
+      <div style={{ padding: '4rem'}}>
+        <button
+          onClick={() => setShowTerminal(false)}
+          style={{
+            position: 'absolute',
+            top: '20px',
+            left: '20px',
+            zIndex: 10,
+            padding: '8px 12px',
+            backgroundColor: 'transparent', 
+            color: '#000',
+            border: '1px solid #000', // Black border
+            borderRadius: '5px',
+            cursor: 'pointer',
+            fontFamily: 'Azeret Mono, monospace',
+            fontSize: '14px',
+            fontWeight: 'normal'
+          }}
+        >
+          Close Terminal
+        </button>
+        <TerminalEmulator />
+      </div>
+    );
+  }
 
   return (
-    <>
+    <div style={{ padding: '4rem'}}>
+      {/* Top-left terminal toggle button */}
+      <button
+        onClick={() => setShowTerminal(true)}
+        style={{
+          position: 'absolute',
+          top: '20px',
+          left: '20px',
+          zIndex: 10,
+          padding: '8px 12px',
+          backgroundColor: 'transparent', 
+          color: '#000',
+          border: '1px solid #000', // Black border
+          borderRadius: '5px',
+          cursor: 'pointer',
+          fontFamily: 'Azeret Mono, monospace',
+          fontSize: '14px',
+          fontWeight: 'normal'
+        }}
+      >
+        Open Terminal
+      </button>
+
       <div>
         <img 
           src={profilePic} 
@@ -57,8 +108,9 @@ function App() {
         >
           <FaLinkedin />
         </a>
+        
       </div>
-    </>
+    </div>
   )
 }
 
