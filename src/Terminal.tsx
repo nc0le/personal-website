@@ -21,9 +21,9 @@ export default function TerminalEmulator() {
         `,
 
         projects: {
-            'krAI-overlay': 'AI-powered overlay for realtime digital art feedback',
+            'krAI-overlay.txt': 'AI-powered overlay for realtime digital art feedback',
             'duckweed.txt': 'Machine learning for duckweed callus classification',
-            'GetYoMoneyUp': 'A chrome extension for smarter online shopping',
+            'GetYoMoneyUp.txt': 'Chrome extension for smarter online shopping',
         },
         research:{
             'knowles-lab.txt': 'Detection and prediction of exitrons',
