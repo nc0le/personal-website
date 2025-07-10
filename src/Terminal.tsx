@@ -77,7 +77,7 @@ export default function TerminalEmulator() {
   }, [])
 
   function prompt() {
-    term.current?.write(`\x1b[38;2;238;188;224myou@nicoles-website \x1b[38;2;136;179;249m${cwd} \x1b[0m$ `)
+    term.current?.write(`\x1b[38;2;137;217;190myou@nicoles-website \x1b[38;2;130;173;159m${cwd} \x1b[0m$ `)
   }
 
   function getCurrentDir(): any {
@@ -105,9 +105,9 @@ export default function TerminalEmulator() {
         } else {
           for (const item of items) {
             if (typeof dir[item] === 'object') {
-              term.current!.writeln(`\x1b[38;2;137;180;250m📁 ${item}/\x1b[0m`)
+              term.current!.writeln(`\x1b[38;2;137;180;250m ${item}/\x1b[0m`)
             } else {
-              term.current!.writeln(`\x1b[38;2;217;197;154m📄 ${item}\x1b[0m`)
+              term.current!.writeln(`\x1b[38;2;217;197;154m ${item}\x1b[0m`)
             }
           }
         }
@@ -151,12 +151,12 @@ export default function TerminalEmulator() {
 
       case 'help':
         term.current!.writeln('');
-        term.current!.writeln('\x1b[38;2;136;179;249mAvailable commands:\x1b[0m');
-        term.current!.writeln('  \x1b[38;2;136;179;249mls\x1b[0m                - List files and directories');
-        term.current!.writeln('  \x1b[38;2;136;179;249mcd <directory>\x1b[0m    - Change directory');
-        term.current!.writeln('  \x1b[38;2;136;179;249mcat <file>\x1b[0m        - Display file contents');
-        term.current!.writeln('  \x1b[38;2;136;179;249mpwd\x1b[0m               - Print working directory');
-        term.current!.writeln('  \x1b[38;2;136;179;249mclear\x1b[0m             - Clear the terminal');
+        term.current!.writeln('\x1b[38;2;250;214;115mAvailable commands:\x1b[0m');
+        term.current!.writeln('  \x1b[38;2;250;214;115mls\x1b[0m                - List files and directories');
+        term.current!.writeln('  \x1b[38;2;250;214;115mcd <directory>\x1b[0m    - Change directory');
+        term.current!.writeln('  \x1b[38;2;250;214;115mcat <file>\x1b[0m        - Display file contents');
+        term.current!.writeln('  \x1b[38;2;250;214;115mpwd\x1b[0m               - Print working directory');
+        term.current!.writeln('  \x1b[38;2;250;214;115mclear\x1b[0m             - Clear the terminal');
         term.current!.writeln('');
         break;
           
