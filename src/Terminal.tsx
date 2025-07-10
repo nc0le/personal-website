@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import { Terminal } from 'xterm'
 import 'xterm/css/xterm.css'
 import './App.css';
@@ -11,7 +11,7 @@ export default function TerminalEmulator() {
   function setCwd(newCwd: string){
     cwd = newCwd;
   }
-  
+
   let input = ''
 
   const fileSystem = {
