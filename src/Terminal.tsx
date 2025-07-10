@@ -21,12 +21,10 @@ export default function TerminalEmulator() {
         projects: {
             'krAI-overlay.txt': 
                 "\r\n"+
-                "\x1b[1;38;2;203;166;247mkrAI-Overlay\x1b[0m\r\n" +
-                "\x1b[38;2;203;166;247m------------------\x1b[0m\r\n" +
-                "• AI-powered overlay that provides realtime digital art feedback\r\n" +
-                "• Working on complete rewrite of codebase with support for new \r\nmainboard\r\n" +
-                "• Hopefully work on some CV stuff next year for autoaim\r\n" +
-                "\x1b[2mGitHub: https://github.com/PurdueRM/Embedded-Control\x1b[0m" +
+                "\x1b[1;38;2;203;166;247mkrAI-Overlay | JavaScript, Electron.js\x1b[0m\r\n" +
+                "\x1b[38;2;203;166;247m---------------------------------------------------------\x1b[0m\r\n" +
+                "• AI-powered overlay for realtime digital art feedback\r\n" +
+                "\x1b[2mGitHub: https://github.com/nc0le/AI-art-overlay\x1b[0m" +
                 "\r\n",
 
             'duckweed.txt': 'Machine learning for duckweed callus classification',
@@ -46,7 +44,7 @@ export default function TerminalEmulator() {
 
       theme: {
         background: '#171717',
-        foreground: '#cfcfcf',
+        foreground: '#f0f0f0',
     
       },
     })
