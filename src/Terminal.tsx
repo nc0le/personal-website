@@ -7,7 +7,11 @@ export default function TerminalEmulator() {
   const containerRef = useRef<HTMLDivElement>(null)
   const term = useRef<Terminal | null>(null)
 
-  const [cwd, setCwd] = useState('~')
+  let cwd = '~';
+  function setCwd(newCwd: string){
+    cwd = newCwd;
+  }
+  
   let input = ''
 
   const fileSystem = {
