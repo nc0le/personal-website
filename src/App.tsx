@@ -80,7 +80,7 @@ function App() {
       <h1 style={{ fontFamily: 'Azeret Mono, monospace', fontSize: 40 , fontWeight: 'normal', color: '#000000'}}>Nicole Cui</h1>
       <div className="card">
         <p>
-        Hello! I am an undergraduate at Columbia University studying computer science & applied math.
+        Hello! I'm an undergraduate at Columbia University studying computer science. Check out my terminal for more info!
         </p>
         <p>
           <b>Contact:</b> n.cui@columbia.edu

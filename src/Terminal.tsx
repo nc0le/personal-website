@@ -17,7 +17,10 @@ export default function TerminalEmulator() {
   const fileSystem = {
     '~': {
         'about.txt': `+----------------------------------------------+\r\n| These folders contain an overview of my work |\r\n| All code: https://github.com/nc0le           |\r\n+----------------------------------------------+`,
-
+        research:{
+            'knowles-lab.txt': 'Detection and prediction of exitrons',
+            'esvelt-lab.txt': 'Research on synthetic biology and CRISPR',
+        },
         projects: {
             'krAI-overlay.txt': 
                 "\r\n"+
@@ -29,10 +32,6 @@ export default function TerminalEmulator() {
 
             'duckweed.txt': 'Machine learning for duckweed callus classification',
             'GetYoMoneyUp.txt': 'Chrome extension for smarter online shopping',
-        },
-        research:{
-            'knowles-lab.txt': 'Detection and prediction of exitrons',
-            'esvelt-lab.txt': 'Research on synthetic biology and CRISPR',
         }
     },
   }
