@@ -23,7 +23,7 @@ function App() {
             borderRadius: '5px',
             cursor: 'pointer',
             fontFamily: 'Azeret Mono, monospace',
-            fontSize: '14px',
+            fontSize: '12px',
             fontWeight: 'normal'
           }}
         >
@@ -56,7 +56,7 @@ function App() {
           borderRadius: '5px',
           cursor: 'pointer',
           fontFamily: 'Azeret Mono, monospace',
-          fontSize: '14px',
+          fontSize: '12px',
           fontWeight: 'normal'
         }}
       >
