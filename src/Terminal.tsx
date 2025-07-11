@@ -18,20 +18,60 @@ export default function TerminalEmulator() {
     '~': {
         'about.txt': `+----------------------------------------------+\r\n| These folders contain an overview of my work |\r\n| All code: https://github.com/nc0le           |\r\n+----------------------------------------------+`,
         research:{
-            'knowles-lab.txt': 'Detection and prediction of exitrons',
-            'esvelt-lab.txt': 'Research on synthetic biology and CRISPR',
+            'knowles-lab.txt':
+                "\r\n"+
+                "\x1b[38;2;203;166;247m+----------------------------------------------------------+\x1b[0m\r\n" +
+                "\x1b[1;38;2;203;166;247m|  Knowles Lab @ Columbia / New York Genome Center (2025)  |\x1b[0m\r\n" +
+                "\x1b[38;2;203;166;247m+----------------------------------------------------------+\x1b[0m\r\n" +
+                "• currently: developing machine learning model to classify falsitrons\r\n" +
+                "• built RNA-seq pipeline to identify exitrons (exonic introns)\r\n" +
+                "• used regression analysis to find correlations between exitrons and disease\r\n" +
+                "\r\n",
+
+            'esvelt-lab.txt':
+                "\r\n"+
+                "\x1b[38;2;203;166;247m+--------------------------------+\x1b[0m\r\n" +
+                "\x1b[1;38;2;203;166;247m|  Esvelt Lab @ MIT (2023-2025)  |\x1b[0m\r\n" +
+                "\x1b[38;2;203;166;247m+--------------------------------+\x1b[0m\r\n" +
+                "• currently: genetically engineering duckweed to taste sweet\r\n" +
+                "• contributed to development of DHARMA (generation of large-scale protein data)\r\n" +
+                "\r\n",
+            
+            'geco-lab.txt':
+                "\r\n"+
+                "\x1b[38;2;203;166;247m+---------------------------------------------------------------+\x1b[0m\r\n" +
+                "\x1b[1;38;2;203;166;247m|  GECO Lab @ Columbia / Chan-Zuckerberg Biohub (briefly 2025)  |\x1b[0m\r\n" +
+                "\x1b[38;2;203;166;247m+---------------------------------------------------------------+\x1b[0m\r\n" +
+                "• optimized cloning protocols for large-scale CRISPR screens\r\n" +
+                "\r\n",
         },
         projects: {
             'krAI-overlay.txt': 
                 "\r\n"+
-                "\x1b[1;38;2;203;166;247mkrAI-Overlay | JavaScript, Electron.js\x1b[0m\r\n" +
-                "\x1b[38;2;203;166;247m---------------------------------------------------------\x1b[0m\r\n" +
+                "\x1b[38;2;203;166;247m+------------------------------------------+\x1b[0m\r\n" +
+                "\x1b[1;38;2;203;166;247m|  krAI-Overlay (JavaScript, Electron.js)  |\x1b[0m\r\n" +
+                "\x1b[38;2;203;166;247m+------------------------------------------+\x1b[0m\r\n" +
                 "• AI-powered overlay for realtime digital art feedback\r\n" +
                 "\x1b[2mGitHub: https://github.com/nc0le/AI-art-overlay\x1b[0m" +
                 "\r\n",
 
-            'duckweed.txt': 'Machine learning for duckweed callus classification',
-            'GetYoMoneyUp.txt': 'Chrome extension for smarter online shopping',
+            'Duckweed.txt': 
+                "\r\n"+
+                "\x1b[38;2;203;166;247m+------------------------------------------+\x1b[0m\r\n" +
+                "\x1b[1;38;2;203;166;247m|  Duckweed Identifier (Python, HTML/CSS)  |\x1b[0m\r\n" +
+                "\x1b[38;2;203;166;247m+------------------------------------------+\x1b[0m\r\n" +
+                '• duckweed callus classification with machine learning\r\n' +
+                "\x1b[2mGitHub: https://github.com/nc0le/duckweed-callus-detection\x1b[0m" +
+                "\r\n",
+            'GetYoMoneyUp.txt':
+                "\r\n"+
+                "\x1b[38;2;203;166;247m+---------------------------------------+\x1b[0m\r\n" +
+                "\x1b[1;38;2;203;166;247m|  GetYoMoneyUp (JavaScript, HTML/CSS)  |\x1b[0m\r\n" +
+                "\x1b[38;2;203;166;247m+---------------------------------------+\x1b[0m\r\n" +
+                '• chrome extension for spending reminders in online shopping\r\n' +
+                '• HackNYU 2025 project' +
+                "\x1b[2mGitHub: https://github.com/nc0le/GetYoMoneyUp\x1b[0m" +
+                "\r\n",
         }
     },
   }
