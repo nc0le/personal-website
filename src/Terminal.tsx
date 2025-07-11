@@ -105,9 +105,9 @@ export default function TerminalEmulator() {
         } else {
           for (const item of items) {
             if (typeof dir[item] === 'object') {
-              term.current!.writeln(`\x1b[38;2;137;180;250m ${item}/\x1b[0m`)
+              term.current!.writeln(`\x1b[38;2;137;180;250m ꩜ ${item}/\x1b[0m`)
             } else {
-              term.current!.writeln(`\x1b[38;2;217;197;154m ${item}\x1b[0m`)
+              term.current!.writeln(`\x1b[38;2;209;173;77m ⭒ ${item}\x1b[0m`)
             }
           }
         }
