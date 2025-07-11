@@ -25,7 +25,7 @@ export default function TerminalEmulator() {
                 "\x1b[38;2;203;166;247m+----------------------------------------------------------+\x1b[0m\r\n" +
                 "• currently: developing machine learning model to classify falsitrons\r\n" +
                 "• built RNA-seq pipeline to identify exitrons (exonic introns)\r\n" +
-                "• used regression analysis to find correlations between exitrons and disease\r\n" +
+                "• used regression analysis to find correlations between exitrons and disease" +
                 "\r\n",
 
             'esvelt-lab.txt':
@@ -55,7 +55,7 @@ export default function TerminalEmulator() {
                 "\x1b[2mGitHub: https://github.com/nc0le/AI-art-overlay\x1b[0m" +
                 "\r\n",
 
-            'Duckweed.txt': 
+            'duckweed.txt': 
                 "\r\n"+
                 "\x1b[38;2;203;166;247m+------------------------------------------+\x1b[0m\r\n" +
                 "\x1b[1;38;2;203;166;247m|  Duckweed Identifier (Python, HTML/CSS)  |\x1b[0m\r\n" +
@@ -63,13 +63,24 @@ export default function TerminalEmulator() {
                 '• duckweed callus classification with machine learning\r\n' +
                 "\x1b[2mGitHub: https://github.com/nc0le/duckweed-callus-detection\x1b[0m" +
                 "\r\n",
+            
+            'my-website.txt':
+                "\r\n"+
+                "\x1b[38;2;203;166;247m+------------------------------------------------------------+\x1b[0m\r\n" +
+                "\x1b[1;38;2;203;166;247m|  Personal Website (React, Xterm.js, TypeScript, HTML/CSS)  |\x1b[0m\r\n" +
+                "\x1b[38;2;203;166;247m+------------------------------------------------------------+\x1b[0m\r\n" +
+                "• what you're looking at!\r\n" +
+                '• terminal inspired by https://ronakpjain.com/terminal/\r\n' +
+                "\x1b[2mGitHub: https://github.com/nc0le/personal-website\x1b[0m" +
+                "\r\n",
+
             'GetYoMoneyUp.txt':
                 "\r\n"+
                 "\x1b[38;2;203;166;247m+---------------------------------------+\x1b[0m\r\n" +
                 "\x1b[1;38;2;203;166;247m|  GetYoMoneyUp (JavaScript, HTML/CSS)  |\x1b[0m\r\n" +
                 "\x1b[38;2;203;166;247m+---------------------------------------+\x1b[0m\r\n" +
                 '• chrome extension for spending reminders in online shopping\r\n' +
-                '• HackNYU 2025 project' +
+                '• HackNYU 2025 project\r\n' +
                 "\x1b[2mGitHub: https://github.com/nc0le/GetYoMoneyUp\x1b[0m" +
                 "\r\n",
         }
